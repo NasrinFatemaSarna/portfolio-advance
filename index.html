@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Nasrin Fatema Sarna | MERN Stack Developer</title>
+
+    <!-- AOS Animation Library CSS -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body class="overflow-x-hidden bg-[#020617] text-gray-100" id="home">
+    <!-- Header/Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-black/70 backdrop-blur-lg border-b border-white/5"
+      data-aos="fade-down"
+      data-aos-duration="1200"
+    >
+     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center">
+  
+  <!-- Logo fully left -->
+  <a
+    href="#home"
+    class="flex items-center gap-2 text-xl sm:text-2xl font-semibold tracking-[0.15em] mr-auto"
+  >
+    <span class="inline-block h-2 w-2 rounded-full bg-emerald-400"></span>
+    <span class="uppercase text-gray-100">
+      <span class="text-emerald-400">Sarna</span>
+    </span>
+  </a>
+
+  <!-- Desktop Menu (center-right) -->
+  <div
+    class="hidden md:flex items-center space-x-6 lg:space-x-8 text-[0.7rem] lg:text-[0.8rem] font-medium tracking-[0.25em] uppercase"
+  >
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Work</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#process" class="nav-link">Process</a>
+    <a href="#stack" class="nav-link">MERN Stack</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button
+    class="md:hidden text-gray-300 hover:text-white transition duration-300"
+    id="menu-button"
+    aria-label="Open navigation menu"
+  >
+    <ion-icon name="menu-outline" class="h-7 w-7"></ion-icon>
+  </button>
+
+</nav>
+
+    </header>
+
+    <!-- Mobile Navigation Menu (full overlay) -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-[60] bg-[#020617] md:hidden
+             translate-x-full transition-transform duration-300 ease-in-out
+             overflow-y-auto"
+    >
+      <div class="p-8 h-full flex flex-col">
+        <div class="flex justify-between items-center mb-8">
+          <span
+            class="text-xs tracking-[0.25em] uppercase text-emerald-400/70"
+          >
+            Menu
+          </span>
+          <button
+            id="close-button"
+            class="text-white hover:text-gray-300 focus:outline-none"
+            aria-label="Close navigation menu"
+          >
+            <ion-icon name="close-outline" class="w-7 h-7"></ion-icon>
+          </button>
+        </div>
+        <ul
+          class="text-2xl text-white font-medium space-y-6 text-center mt-4"
+          id="mobileNav"
+        >
+          <li>
+            <a href="#home" class="mobile-link mobile-nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="mobile-link mobile-nav-link">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="mobile-link mobile-nav-link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="mobile-link mobile-nav-link">Work</a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="mobile-link mobile-nav-link"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#process" class="mobile-link mobile-nav-link">Process</a>
+          </li>
+          <li>
+            <a href="#stack" class="mobile-link mobile-nav-link"
+              >MERN Stack</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="mobile-link mobile-nav-link"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="mobile-link mobile-nav-link"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="mobile-link mobile-nav-link">FAQ</a>
+          </li>
+          <li>
+            <a href="#contact" class="mobile-link mobile-nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero-bg relative flex items-center justify-center text-center py-20 sm:py-24 md:py-28 lg:py-32 min-h-[80vh]"
+    >
+      <!-- green line & label like Davies -->
+      <div
+        class="hidden md:flex flex-col gap-6 absolute left-6 top-1/3 text-[0.65rem] tracking-[0.3em] uppercase text-gray-400"
+        data-aos="fade-right"
+        data-aos-duration="900"
+      >
+        <span class="h-14 w-px bg-emerald-500/70"></span>
+        <span>Portfolio — 2025</span>
+      </div>
+
+      <!-- subtle glow circle -->
+      <div
+        class="pointer-events-none absolute -top-24 right-0 w-72 h-72 bg-emerald-500/20 blur-3xl rounded-full animate-pulse"
+      ></div>
+
+      <div class="max-w-4xl mx-auto px-4 relative z-10">
+        <!-- Avatar -->
+        <div
+          class="mb-8 w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[240px] md:h-[240px] rounded-full mx-auto glowing-border overflow-hidden"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
+          <img
+            src="./images/hero img.jpg"
+            class="w-full h-full rounded-full object-cover avatar-ring"
+            alt="Profile photo"
+          />
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="1200">
+          <!-- ⭐ MY NAME ANIMATION HERE ⭐ -->
+          <h2
+            class="typing-name text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-6"
+          >
+            <span id="typed-name"></span>
+          </h2>
+
+          <p
+            class="text-[0.7rem] sm:text-xs tracking-[0.35em] uppercase text-emerald-400 mb-10"
+          >
+            MERN Stack Developer — Based in Dhaka
+          </p>
+
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4"
+          >
+            Crafting modern
+            <span class="text-emerald-400">web experiences</span> with the MERN
+            stack.
+          </h1>
+
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto"
+          >
+            I design and develop full-stack applications using MongoDB, Express,
+            React and Node.js — focusing on performance, clean architecture and
+            delightful UI.
+          </p>
+
+          <div
+            class="flex flex-wrap gap-4 justify-center sm:justify-center mt-8"
+          >
+            <a href="#projects" class="btn-primary">View Work</a>
+            <a href="./images/nasrin Fatema Sarna CV.pdf" class="btn-ghost">
+              Download CV
+            </a>
+          </div>
+
+          <!-- stats strip -->
+          <div
+            class="mt-10 grid grid-cols-3 gap-6 text-left max-w-xl mx-auto text-xs sm:text-sm"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <div>
+              <p class="text-2xl font-semibold text-white">10+</p>
+              <p class="tracking-[0.18em] uppercase text-gray-400">
+                Projects shipped
+              </p>
+            </div>
+            <div>
+              <p class="text-2xl font-semibold text-white">3+</p>
+              <p class="tracking-[0.18em] uppercase text-gray-400">
+                Years coding
+              </p>
+            </div>
+            <div>
+              <p class="text-2xl font-semibold text-white">100%</p>
+              <p class="tracking-[0.18em] uppercase text-gray-400">
+                Remote ready
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+     <section id="about" class="section-wrapper">
+  <div class="section-inner">
+    
+    <!-- Header -->
+    <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+      <p class="section-kicker">About</p>
+      <h2 class="section-title">
+        A MERN stack developer focused on quality & clarity.
+      </h2>
+    </div>
+
+    <!-- Content -->
+    <div class="mt-14 flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-20">
+
+      <!-- Image -->
+      <div
+        class="w-56 h-56 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border border-white/10 
+               shadow-[0_20px_60px_rgba(0,0,0,0.7)] hover:scale-105 transition duration-300"
+        data-aos="fade-right"
+      >
+        <img
+          src="./images/img2_n.jpg"
+          alt="Nasrin Fatema Sarna"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Text Block -->
+      <div 
+        class="flex-1 space-y-6 text-gray-300 text-sm sm:text-base leading-relaxed"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <p>
+          I’m a <span class="text-white font-semibold">MERN stack developer</span> 
+          who enjoys turning complex ideas into clean, elegant and scalable digital products.
+          I focus on clarity, performance and maintainable architecture.
+        </p>
+
+        <p>
+          My toolkit includes React, Next.js, Tailwind CSS, Node.js, Express,
+          MongoDB, MySQL, JWT Authentication and modern deployment pipelines (Vercel / Netlify).
+          I’m comfortable handling both frontend and backend with equal confidence.
+        </p>
+
+        <!-- Skills Pills -->
+        <div class="flex flex-wrap gap-3 pt-2">
+          <span class="pill">MERN Stack</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Responsive UI</span>
+          <span class="pill">Authentication</span>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-5 text-2xl pt-3">
+          <a href="https://www.facebook.com/sarnali.nila" class="social-icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://github.com/NasrinFatemaSarna" class="social-icon">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/sarna_3333/" class="social-icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/nasrinfatema/" class="social-icon">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   
+
+    <!-- Skills -->
+    <section
+      id="skills"
+      class="section-wrapper bg-slate-950/70 border-y border-white/5"
+    >
+      <div class="section-inner">
+        <div
+          class="section-header"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p class="section-kicker">Skills</p>
+          <h2 class="section-title">Tools I use to build products.</h2>
+        </div>
+
+        <!-- Toggle Buttons -->
+        <div
+          class="flex flex-wrap justify-center gap-4 sm:gap-6 mt-8 mb-12"
+          data-aos="fade-up"
+        >
+          <button
+            onclick="showSkills('frontend')"
+            id="btn-frontend"
+            class="tab-btn tab-btn-active"
+          >
+            Frontend
+          </button>
+          <button
+            onclick="showSkills('backend')"
+            id="btn-backend"
+            class="tab-btn"
+          >
+            Backend
+          </button>
+        </div>
+
+        <!-- FRONTEND SKILLS -->
+        <div
+          id="frontend"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10"
+        >
+          <div class="skill-card" data-aos="fade-up">
+            <img src="./images/html.png" class="skill-icon" alt="HTML5" />
+            <h3 class="skill-title">HTML5</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+            <img src="./images/css-3.png" class="skill-icon" alt="CSS3" />
+            <h3 class="skill-title">CSS3</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="./images/bootstrap.png"
+              class="skill-icon"
+              alt="Bootstrap"
+            />
+            <h3 class="skill-title">Bootstrap</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+            <img
+              src="./images/javascriptes6.png"
+              class="skill-icon"
+              alt="JavaScript"
+            />
+            <h3 class="skill-title">JavaScript (ES6+)</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="./images/tailwind css.png"
+              class="skill-icon"
+              alt="Tailwind CSS"
+            />
+            <h3 class="skill-title">Tailwind CSS</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+            <img src="./images/react.png" class="skill-icon" alt="React" />
+            <h3 class="skill-title">React.js</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/nextjs.png" class="skill-icon" alt="Next.js" />
+            <h3 class="skill-title">Next.js</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+            <img src="./images/redux.png" class="skill-icon" alt="Redux" />
+            <h3 class="skill-title">Redux / RTK</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+            <img
+              src="./images/firebase.png"
+              class="skill-icon"
+              alt="Firebase"
+            />
+            <h3 class="skill-title">Firebase</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+            <img
+              src="./images/framermotion.png"
+              class="skill-icon"
+              alt="Framer Motion"
+            />
+            <h3 class="skill-title">Framer Motion</h3>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+            <img src="./images/git.png" class="skill-icon" alt="Git" />
+            <h3 class="skill-title">Git & GitHub</h3>
+          </div>
+        </div>
+
+        <!-- BACKEND SKILLS -->
+        <div
+          id="backend"
+          class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10"
+        >
+          <div class="skill-card">
+            <img src="./images/mongodb.png" class="skill-icon" alt="MongoDB" />
+            <h3 class="skill-title">MongoDB</h3>
+          </div>
+          <div class="skill-card">
+            <img
+              src="./images/mongoose.png"
+              class="skill-icon"
+              alt="Mongoose"
+            />
+            <h3 class="skill-title">Mongoose</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/mysql.png" class="skill-icon" alt="MySQL" />
+            <h3 class="skill-title">MySQL</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/api.png" class="skill-icon" alt="REST API" />
+            <h3 class="skill-title">REST API</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/jwt.png" class="skill-icon" alt="JWT" />
+            <h3 class="skill-title">JWT Auth</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/postman.png" class="skill-icon" alt="Postman" />
+            <h3 class="skill-title">Postman</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/nodejs.png" class="skill-icon" alt="Node.js" />
+            <h3 class="skill-title">Node.js</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/express.png" class="skill-icon" alt="Express" />
+            <h3 class="skill-title">Express.js</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./images/cloud.png" class="skill-icon" alt="Deploy" />
+            <h3 class="skill-title">Vercel / Netlify</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-wrapper">
+      <div class="section-inner">
+        <div
+          class="section-header"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p class="section-kicker">Selected Work</p>
+          <h2 class="section-title">Recent projects & experiments.</h2>
+        </div>
+
+        <div
+          class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <article class="project-card" data-aos="fade-up">
+            <img
+              src="./images/portfolio-1.webp"
+              alt="Full Stack Agency Website"
+              class="project-image"
+            />
+            <div class="project-body">
+              <p class="project-tag">Full Stack</p>
+              <h3 class="project-title">Full Stack Admin Dashboard Website</h3>
+              <p class="project-text">
+                MERN based admin dashboard.
+              </p>
+              <a href="https://nasrinfatemasarna.github.io/admin-dashboard/" class="project-link">
+                View project
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-delay="80"
+          >
+            <img
+              src="./images/portfolio-2.webp"
+              alt="Analytics"
+              class="project-image"
+            />
+            <div class="project-body">
+              <p class="project-tag">Dashboard</p>
+              <h3 class="project-title">Data-Driven Analytics App</h3>
+              <p class="project-text">
+                Analytics dashboard with secure REST API, charts and live data.
+              </p>
+              <a href="#" class="project-link">
+                View project
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-delay="140"
+          >
+            <img
+              src="./images/portfolio-3.webp"
+              alt="Blog"
+              class="project-image"
+            />
+            <div class="project-body">
+              <p class="project-tag">Platform</p>
+              <h3 class="project-title">Full Stack Blog Application</h3>
+              <p class="project-text">
+                Blog platform with JWT auth, CRUD operations and admin panel.
+              </p>
+              <a href="#" class="project-link">
+                View project
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section
+      id="experience"
+      class="section-wrapper bg-slate-950/80 border-y border-white/5"
+    >
+      <div class="section-inner">
+        <div
+          class="section-header"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p class="section-kicker">Experience</p>
+          <h2 class="section-title">
+            Where I’ve been using the MERN stack in real projects.
+          </h2>
+        </div>
+
+        <div class="mt-10 space-y-6">
+          <div
+            class="bg-black/60 border border-white/10 rounded-2xl p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3"
+            data-aos="fade-up"
+          >
+            <div>
+              <p
+                class="text-xs uppercase tracking-[0.2em] text-emerald-400"
+              >
+                2023 — Present
+              </p>
+              <h3 class="mt-1 text-sm sm:text-base font-semibold">
+                Freelance MERN Stack Developer · Remote
+              </h3>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-300 max-w-xl">
+              Building dashboards, e-commerce experiences and internal tools
+              with React, Node.js, Express and MongoDB for clients from
+              different countries.
+            </p>
+          </div>
+
+          <div
+            class="bg-black/60 border border-white/10 rounded-2xl p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3"
+            data-aos="fade-up"
+            data-aos-delay="80"
+          >
+            <div>
+              <p
+                class="text-xs uppercase tracking-[0.2em] text-emerald-400"
+              >
+                2022 — 2023
+              </p>
+              <h3 class="mt-1 text-sm sm:text-base font-semibold">
+                Frontend Developer · Local Agency
+              </h3>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-300 max-w-xl">
+              Crafted portfolio sites and landing pages with React & Tailwind,
+              focused on performance and clean component architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process / Workflow -->
+    <section id="process" class="section-wrapper">
+      <div class="section-inner">
+        <div
+          class="section-header"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <p class="section-kicker">Process</p>
+          <h2 class="section-title">How I build MERN stack projects.</h2>
+        </div>
+
+        <div
+          class="mt-10 grid gap-6 md:grid-cols-4"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <div class="workflow-card">
+            <p class="workflow-step">01 · Discover</p>
+            <p class="workflow-text">
+              Understand product goals, users, requirements and technical
+              constraints.
+            </p>
+          </div>
+          <div class="workflow-card">
+            <p class="workflow-step">02 · Design</p>
+            <p class="workflow-text">
+              UX flows, UI layout, data models and API structure for the MERN
+              app.
+            </p>
+          </div>
+          <div class="workflow-card">
+            <p class="workflow-step">03 · Build</p>
+            <p class="workflow-text">
+              Implement React UI, Node/Express APIs, MongoDB models and auth.
+            </p>
+          </div>
+          <div class="workflow-card">
+            <p class="workflow-step">04 · Launch</p>
+            <p class="workflow-text">
+              Deploy on Vercel/Netlify, monitor and iterate based on feedback.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MERN Stack Strip -->
+    <section
+      id="stack"
+      class="border-y border-white/5 bg-gradient-to-r from-emerald-500/10 via-transparent to-emerald-500/10"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs sm:text-sm"
+        data-aos="fade-up"
+        data-aos-duration="900"
+      >
+        <p
+          class="tracking-[0.3em] uppercase text-emerald-400 flex items-center gap-2"
+        >
+          <span
+            class="inline-block h-2 w-2 rounded-full bg-emerald-400"
+          ></span>
+          MERN Stack Focus
+        </p>
+        <div
+          class="flex flex-wrap gap-4 sm:gap-6 text-[0.75rem] sm:text-xs tracking-[0.2em] uppercase text-gray-300"
+        >
+          <span>MongoDB</span>
+          <span>Express.js</span>
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>JWT Auth</span>
+          <span>REST APIs</span>
+          <span>Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section
+      id="services"
+      class="section-wrapper bg-slate-950/80 border-y border-white/5"
+      data-aos="fade-up"
+    >
+      <div class="section-inner">
+        <div class="section-header">
+          <p class="section-kicker">Services</p>
+          <h2 class="section-title">How I can help your product.</h2>
+        </div>
+
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="service-card">
+            <div class="service-icon">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="service-title">MERN Stack Web Apps</h3>
+            <p class="service-text">
+              End-to-end apps using MongoDB, Express, React, Node.js — from idea
+              to deployment.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <h3 class="service-title">Frontend & UI</h3>
+            <p class="service-text">
+              Pixel-perfect, responsive interfaces with React, Next.js, Tailwind
+              and smooth animations.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <h3 class="service-title">APIs & Backends</h3>
+            <p class="service-text">
+              Secure REST APIs, JWT authentication and clean backend
+              architecture.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <ion-icon name="speedometer-outline"></ion-icon>
+            </div>
+            <h3 class="service-title">Performance</h3>
+            <p class="service-text">
+              Faster load times, Core Web Vitals improvements and bundle
+              optimization.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <ion-icon name="color-palette-outline"></ion-icon>
+            </div>
+            <h3 class="service-title">Design-Driven Dev</h3>
+            <p class="service-text">
+              Layouts that balance aesthetics with usability and accessibility.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <ion-icon name="cloud-upload-outline"></ion-icon>
+            </div>
+            <h3 class="service-title">Deployment & Care</h3>
+            <p class="service-text">
+              Deployment on Vercel / Netlify and ongoing support for new
+              features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-wrapper">
+      <div class="section-inner">
+        <div
+          class="section-header"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <p class="section-kicker">Testimonials</p>
+          <h2 class="section-title">What clients say about my work.</h2>
+        </div>
+
+        <div
+          class="mt-10 grid md:grid-cols-2 gap-6"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <div class="bg-slate-950/80 border border-white/10 rounded-3xl p-6">
+            <p class="text-sm text-gray-200">
+              “Sarna delivered a clean MERN stack dashboard for our team,
+              exactly matching the design and performing fast even with
+              real-time data.”
+            </p>
+            <p class="mt-4 text-xs text-gray-400">
+              — Client Name, Product Lead
+            </p>
+          </div>
+          <div class="bg-slate-950/80 border border-white/10 rounded-3xl p-6">
+            <p class="text-sm text-gray-200">
+              “Communication was clear, deadlines were respected and the code is
+              easy for our in-house team to extend.”
+            </p>
+            <p class="mt-4 text-xs text-gray-400">
+              — Client Name, Founder
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section
+      id="faq"
+      class="section-wrapper bg-slate-950/70 border-y border-white/5"
+    >
+      <div class="section-inner">
+        <div
+          class="section-header"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <p class="section-kicker">FAQ</p>
+          <h2 class="section-title">A few quick answers.</h2>
+        </div>
+
+        <div
+          class="mt-10 grid md:grid-cols-2 gap-6"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <div class="faq-card">
+            <h3 class="faq-question">
+              What kind of MERN projects do you usually build?
+            </h3>
+            <p class="faq-answer">
+              Dashboards, SaaS tools, portfolios, e-commerce and custom internal
+              tools with authentication, role-based access and APIs.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-question">
+              Do you work with existing codebases?
+            </h3>
+            <p class="faq-answer">
+              Yes. I can review, refactor or extend an existing React/Node app
+              after a quick audit of the repository.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-question">
+              Which time zones can you overlap with?
+            </h3>
+            <p class="faq-answer">
+              I’m based in GMT+6 (Dhaka) but can overlap with EU and partial US
+              hours for meetings and standups.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-question">
+              How do we start working together?
+            </h3>
+            <p class="faq-answer">
+              Send me a short message with your idea or current app via the
+              contact form below — I’ll reply with next steps and a rough
+              timeline.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="section-wrapper"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      <div class="section-inner">
+        <div class="section-header">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Let’s talk about your next build.</h2>
+        </div>
+
+        <div
+          class="mt-10 bg-slate-950/80 border border-white/5 rounded-3xl overflow-hidden grid md:grid-cols-[1.1fr,1fr]"
+        >
+          <!-- Left info -->
+          <div
+            class="bg-gradient-to-br from-black via-slate-950 to-black p-8 sm:p-10 md:p-12 flex flex-col justify-between"
+          >
+            <div>
+              <p class="text-gray-300 mb-6 text-sm sm:text-base">
+                Have a project in mind, need help with an existing app, or just
+                want to say hi? Drop a message — I usually respond within 24
+                hours.
+              </p>
+
+              <div class="space-y-4 text-sm">
+                <div class="flex items-center gap-3">
+                  <ion-icon
+                    name="call-outline"
+                    class="text-emerald-400"
+                  ></ion-icon>
+                  <span>+88 01704503333</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <ion-icon
+                    name="mail-outline"
+                    class="text-emerald-400"
+                  ></ion-icon>
+                  <span>nasrinfatemasarna@gmail.com</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <ion-icon
+                    name="location-outline"
+                    class="text-emerald-400 mt-1"
+                  ></ion-icon>
+                  <span>Uttara, Dhaka, Bangladesh</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-4 text-2xl">
+              <a
+                href="https://www.facebook.com/sarnali.nila"
+                class="social-icon"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a
+                href="https://www.instagram.com/sarna_3333/"
+                class="social-icon"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a
+                href="https://github.com/NasrinFatemaSarna"
+                class="social-icon"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nasrinfatema/"
+                class="social-icon"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="p-8 sm:p-10 md:p-12 bg-slate-950">
+            <form class="space-y-5 text-sm">
+              <div>
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+              <div>
+                <label class="form-label">Message</label>
+                <textarea
+                  rows="5"
+                  class="form-input resize-none"
+                  placeholder="Tell me a bit about your project..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full sm:w-auto">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-black border-t border-white/5 text-gray-400 py-5">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 space-y-4 md:space-y-0 text-xs sm:text-sm"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <span
+            class="inline-block h-2 w-2 rounded-full bg-emerald-400"
+          ></span>
+          <span class="tracking-[0.25em] uppercase text-[0.7rem]">
+            Nasrin Fatema <span class="text-emerald-400">Sarna</span>
+          </span>
+        </div>
+
+        <!-- Center text -->
+        <div class="text-center leading-snug">
+          <div>&copy; 2025 Nasrin Fatema Sarna. All rights reserved.</div>
+          <div class="text-[0.65rem] uppercase tracking-[0.25em] mt-1">
+            Design by <span class="text-emerald-400">Sarna</span>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div
+          class="flex space-x-5 text-[0.7rem] uppercase tracking-[0.18em]"
+        >
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Work</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS + Custom JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
