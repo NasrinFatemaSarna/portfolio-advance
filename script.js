@@ -132,3 +132,42 @@ document.addEventListener("click", (e) => {
 
   setTimeout(() => effect.remove(), 600);
 });
+/* =======================
+   COUNTER RUNNING EFFECT
+======================= */
+
+function runCounter() {
+  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    const duration = 2000; // animation 2 seconds
+    const step = target / (duration / 16);
+
+    let value = 0;
+
+    const update = () => {
+      value += step;
+      if (value < target) {
+        counter.textContent = Math.floor(value) + (counter.textContent.includes('%') ? '%' : '+');
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target + (counter.textContent.includes('%') ? '%' : '+');
+      }
+    };
+
+    update();
+  });
+}
+
+// Run when visible (intersection observer)
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      runCounter();
+      obs.unobserve(entry.target);
+    }
+  });
+});
+
+document.querySelectorAll('.counter').forEach(counter => observer.observe(counter));
